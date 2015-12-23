@@ -1,0 +1,54 @@
+\documentclass[]{article}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=30mm,
+ right=30mm,
+ top=20mm,
+ bottom=20mm,
+ }
+\title{Solving Travelling Salesman Problem using Simple Genetic Algorithm (SGA)}
+\author{Kshitij Goel (13AE10013)}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+\centering
+\textbf{Term Paper, Intelligent Control (EE60028)}
+\end{center}
+\begin{abstract}
+Travelling Salesman Problem involves determination of optimal path between a set of points such that if a salesman walks through all of them only once.
+The problem is very non-linear in nature and can't be efficiently solved using conventional optimization techniques. Hence, here the problem is attempted
+to be solved by a heuristic non-conventional optimization technique called Genetic Algorithm. Precisely, here only Simple Genetic Algorithm (SGA) is under consideration.
+Positions of cities are assigned randomly. Optimal path plot, plot showing position of  cities, distance (cost) matrix and Cost v/s time plots are obtained. 
+\end{abstract}
+
+\section{Travelling Salesman Problem}
+Inputs to the problem :
+\begin{itemize}
+\item{No. of points to be visited by the salesman (it can't cross the same points again)} 
+\item{No. of iterations before the algorithm convergers}
+\end{itemize}
+Outputs expected :
+\begin{itemize}
+\item{Plot showing the randomly generated position of cities}
+\item{Plot showing the Optimal Path along these cities}
+\end{itemize}
+\section{Subroutines}
+\subsection{\tt{Input/Output}}
+I/O is implemented as a \tt{MATLAB} structure and has the fields :
+\begin{itemize}
+\item 
+\end{itemize}
+\begin{figure}
+\centering
+\textbf{Sample Random Input of positions of $50$ Cities}\par \medskip
+\includegraphics[scale = 0.5]{images/city_pos}
+\caption{Random (x,y) allocated to $50$ cities}
+\end{figure}
+
+\end{document}
